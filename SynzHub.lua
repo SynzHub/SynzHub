@@ -36,7 +36,7 @@ keyTextBox.Size = UDim2.new(0.8, 0, 0, 40)
 keyTextBox.Position = UDim2.new(0.1, 0, 0.25, 0)
 keyTextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 keyTextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-keyTextBox.PlaceholderText = "Digite sua key aqui..."
+keyTextBox.PlaceholderText = "Type your key here..."
 keyTextBox.Font = Enum.Font.Gotham
 keyTextBox.TextSize = 14
 keyTextBox.Text = ""
@@ -83,7 +83,7 @@ getKeyButton.MouseButton1Click:Connect(function()
     
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "PLANTS VS BRAINROTS SYNZ",
-        Text = "Link copiado para área de transferência!",
+        Text = "Link copied!",
         Duration = 5
     })
 end)
@@ -94,13 +94,13 @@ verifyKeyButton.MouseButton1Click:Connect(function()
     if key == "" or key == " " then
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "PLANTS VS BRAINROTS SYNZ",
-            Text = "Digite uma key para verificar!",
+            Text = "Type your key!",
             Duration = 5
         })
     else
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "PLANTS VS BRAINROTS SYNZ", 
-            Text = "Key digitada: " .. key,
+            Text = "Key typed: " .. key,
             Duration = 5
         })
     end
